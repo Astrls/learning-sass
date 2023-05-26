@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+$font1: "Didact Gothic", sans-serif;
+$pad: 0, 3vw, 0, 3vw;
+$color1: #484848;
+$color2: #848484;
+
+content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  font-family: $font1;
+  color: $color2;
+  width: 80vw;
+  h1 {
+    color: rgb(62, 62, 62);
+  }
+
+  .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2vh 0 3vh 4vw;
+    width: 100vw;
+    a {
+      @extend content;
+      font-size: 1em;
+      text-decoration: none;
+      text-align: end;
+      padding-right: 1vw;
+    }
+    p {
+      text-align: end;
+    }
+  }
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 100vw;
+    margin-left: 4vw;
+    align-items: baseline;
+    .card {
+      margin-right: 1vw;
+      width: 17vw;
+      img {
+        width: 17vw;
+      }
+      .desc {
+        height: fit-content;
+        font-weight: 100;
+        font-size: 1.5em;
+        overflow: clip;
+        text-overflow: ellipsis;
+        margin-bottom: 1vh;
+        b {
+          color: $color1;
+        }
+      }
+      .details {
+        display: flex;
+        flex-direction: row;
+        color: rgb(25, 161, 116);
+        align-items: center;
+        p {
+          color: $color2;
+          font-family: $font1;
+          font-weight: 400;
+          font-size: 1.2em;
+          padding-left: 5px;
+        }
+      }
+    }
+    .fa-regular {
+      align-self: center;
+      padding-right: 2vw;
+      font-size: 3em;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 480px) {
+}

@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+content, content .title a {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  font-family: "Didact Gothic", sans-serif;
+  color: #848484;
+  width: 80vw;
+}
+content h1, content .title a h1 {
+  color: rgb(62, 62, 62);
+}
+content .title, content .title a .title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 2vh 0 3vh 4vw;
+  width: 100vw;
+}
+content .title a {
+  font-size: 1em;
+  text-decoration: none;
+  text-align: end;
+  padding-right: 1vw;
+}
+content .title p {
+  text-align: end;
+}
+content .card-container, content .title a .card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  width: 100vw;
+  margin-left: 4vw;
+  align-items: baseline;
+}
+content .card-container .card {
+  margin-right: 1vw;
+  width: 17vw;
+}
+content .card-container .card img {
+  width: 17vw;
+}
+content .card-container .card .desc {
+  height: fit-content;
+  font-weight: 100;
+  font-size: 1.5em;
+  overflow: clip;
+  text-overflow: ellipsis;
+  margin-bottom: 1vh;
+}
+content .card-container .card .desc b {
+  color: #484848;
+}
+content .card-container .card .details {
+  display: flex;
+  flex-direction: row;
+  color: rgb(25, 161, 116);
+  align-items: center;
+}
+content .card-container .card .details p {
+  color: #848484;
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  padding-left: 5px;
+}
+content .card-container .fa-regular {
+  align-self: center;
+  padding-right: 2vw;
+  font-size: 3em;
+}
+
+/*# sourceMappingURL=04.zone-cards.css.map */
