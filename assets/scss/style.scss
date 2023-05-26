@@ -1,0 +1,16 @@
+$color1: rgb(205, 106, 30);
+$color2: rgb(111, 111, 173);
+
+body {
+  background: $color1;
+  p {
+    color: $color2;
+    font: {
+      family: arial;
+      weight: bold;
+      size: calc(12/16) * 1em;
+    }
+  }
+}
+
+/*# sourceMappingURL=style.scss.map */
